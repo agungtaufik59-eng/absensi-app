@@ -20,10 +20,12 @@
   </style>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbwxJWSewi4dRUbzV91N7pEv6WQ1LiW8aSErLJbjSjTLFCp8P9TNtlNuEc5c37IGMjaESQ/exec"></iframe>
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbwxJWSewi4dRUbzV91N7pEv6WQ1LiW8aSErLJbjSjTLFCp8P9TNtlNuEc5c37IGMjaESQ/exec"
+    allow="geolocation; camera; microphone"
+  ></iframe>
 
   <script>
-    // Daftarkan Service Worker agar tombol 'Install' muncul
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
