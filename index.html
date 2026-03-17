@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>BPI Presensi</title>
+  
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/512/checked-user-male.png">
+  <link rel="apple-touch-icon" href="https://img.icons8.com/fluency/512/checked-user-male.png">
+
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #F8FAFC; }
+    iframe { border: none; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/macros/s/AKfycbwxJWSewi4dRUbzV91N7pEv6WQ1LiW8aSErLJbjSjTLFCp8P9TNtlNuEc5c37IGMjaESQ/exec"></iframe>
+
+  <script>
+    // Daftarkan Service Worker agar tombol 'Install' muncul
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
